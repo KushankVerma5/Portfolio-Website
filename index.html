@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montaga&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">K.V.</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Hi, I'm Kushank</h1>
+      <p class="cover">I build clean and functional websites.</p>
+
+
+      <p class="cover">And I do have proficiency in 
+        <span class="typer">
+            <div id="skills-box">
+                <div class="skill" data-skill="React Developer"></div>
+              </div>
+        </span>
+
+        <div class="gooey-container">
+          <button onclick="scrollToProjects()" class="gooey-btn"></a>Other Projects</button>
+          <svg>
+            <defs>
+              <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                <feColorMatrix in="blur" mode="matrix"
+                  values="1 0 0 0 0  
+                          0 1 0 0 0  
+                          0 0 1 0 0  
+                          0 0 0 20 -10" result="goo" />
+                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+              </filter>
+            </defs>
+          </svg>
+        </div>
+        
+      </p>
+      
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I’m a frontend developer passionate about building great user experiences. I love clean code and creative designs.</p>      
+
+    <div class="highlights">
+      <div class="courseone">
+        <h1>Schooling</h1>
+        <hr class="hori">
+        <p class="schooling">Name: Mallikarjun school</p>
+      </div>
+      <div class="coursetwo">
+        <h1>University</h1>
+        <hr class="hori">
+        <p class="university">Name: Future Uni,Bareilly</p>
+      </div>
+      <div class="coursethree">
+        <h1>Aiming</h1>
+        <hr class="hori">
+        <p class="aiming">To build and grow stronger in every as aspect as every man had lived.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section" data-aos="fade-right">
+    <h2 class="skl">Skills</h2>
+    <div class="skills-container">
+      <h4><div class="skill">Version Control</div></h4>
+      <h4></h4><div class="skill">Backend</div></h4>
+      <h4></h4><div class="skill">CMS</div></h4>
+      <h4></h4><div class="skill">Frontend</div></h4>
+      <h4><div class="skill">Cloud Platforms</div></h4>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" data-aos="fade-left">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card pone">Project 1</div>
+      <div class="project-card ptwo">Project 2</div>
+      <div class="project-card pthree">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section" data-aos="fade-up">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
